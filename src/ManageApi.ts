@@ -7,19 +7,20 @@ axiosRetry(axios, { retries: 5 });
 
 interface CreateStorageTokenOptions {
   description: string,
-  canManageBuckets: boolean,
-  canManageTokens: boolean,
-  canReadAllFileUploads: boolean,
-  expiresIn: number,
-  bucketPermissions: object
+  canManageBuckets?: boolean,
+  canManageTokens?: boolean,
+  canReadAllFileUploads?: boolean,
+  expiresIn?: number,
+  bucketPermissions?: object
 }
 
-export default class Manage {
+export default class ManageApi {
   private readonly baseUri: string;
+
   private readonly token: string;
 
   constructor(baseUri: string, token: string) {
-    this.baseUri = baseUri;
+    this.baseUri = _.endsWith(baseUri, '/manage') ? baseUri : `${baseUri}/manage`;
     this.token = token;
   }
 

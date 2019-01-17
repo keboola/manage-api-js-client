@@ -36,7 +36,8 @@
     "eslint": "^5.4.0",
     "eslint-plugin-import": "^2.14.0",
     "jest": "^23.6.0",
-    "typescript": "^3.2.2"
+    "typescript": "^3.2.2",
+    "typescript-eslint-parser": "^21.0.2"
   },
   "scripts": {
     "test": "./node_modules/.bin/jest --bail",

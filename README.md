@@ -12,11 +12,11 @@ Javascript client for Keboola Connection Management API.
 
 ### Usage
 
-You can use ES6 imports (`import Manage from '@keboola/manage-api-js-client';`) or require (`const Manage = require('@keboola/manage-api-js-client').default;`).
+You can use ES6 imports (`import ManageApi from '@keboola/manage-api-js-client';`) or require (`const ManageApi = require('@keboola/manage-api-js-client').default;`).
 
 ```javascript
-const Manage = require('@keboola/manage-api-js-client').default;
-const manage = new Manage('https://connection.keboola.com', 'TOKEN');
+const ManageApi = require('@keboola/manage-api-js-client').default;
+const manageApi = new ManageApi('https://connection.keboola.com', 'TOKEN');
 
 
 ```
