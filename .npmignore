@@ -1,3 +1,4 @@
 .travis.yml
 .codeclimate.yml
 yarn.lock
+src/__tests__

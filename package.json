@@ -1,6 +1,6 @@
 {
   "name": "@keboola/manage-api-js-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Javascript client for Keboola Management API",
   "repository": "https://github.com/keboola/manage-api-js-client",
   "author": "Jakub Matejka <jakub@keboola.com>",
@@ -36,7 +36,7 @@
   "scripts": {
     "test": "./node_modules/.bin/jest --bail",
     "lint": "./node_modules/.bin/eslint src",
-    "build": "./node_modules/.bin/babel src/ -d dist --source-maps"
+    "prepack": "./node_modules/.bin/babel src/ -d dist --source-maps"
   },
   "files": [
     "dist"
