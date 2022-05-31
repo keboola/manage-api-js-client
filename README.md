@@ -34,3 +34,7 @@ The repository requires conforming to a set of coding standards based on [AirBnB
 ### Deployment
 
 Deployment to NPM compiles the code from `src` directory to `dist` directory.
+
+## License
+
+MIT licensed, see [LICENSE](./LICENSE) file.
